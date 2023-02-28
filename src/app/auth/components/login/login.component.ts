@@ -4,9 +4,9 @@ import {Observable} from "rxjs";
 import {select, Store} from "@ngrx/store";
 
 import {AppStateInterface} from "src/app/shared/types/appState.interface";
-import {loginAction} from "../../store/actions/login.actions";
-import {BackendErrorsInterface} from "../../../shared/types/backendErrors.interface";
-import {isSubmittingSelector, validationErrorsSelector} from "../../store/selectors";
+import {loginAction} from "src/app/auth/store/actions/login.actions";
+import {BackendErrorsInterface} from "src/app/shared/types/backendErrors.interface";
+import {isSubmittingSelector, validationErrorsSelector} from "src/app/auth/store/selectors";
 
 @Component({
   selector: 'mc-login',
